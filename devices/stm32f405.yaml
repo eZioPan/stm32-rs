@@ -178,3 +178,6 @@ _include:
  - common_patches/rtc/rtc_cr.yaml
  - ../peripherals/rtc/rtc_common.yaml
  - common_patches/adc/adc_common_group_name.yaml
+ - common_patches/syscfg/f4_common.yaml
+ - common_patches/syscfg/f405.yaml
+ - ../peripherals/syscfg/syscfg_f4_common.yaml

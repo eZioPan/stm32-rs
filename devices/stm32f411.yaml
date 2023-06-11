@@ -187,3 +187,5 @@ _include:
  - common_patches/i2c/v1_fltr.yaml
  - ../peripherals/i2c/i2c_v1_fltr.yaml
  - common_patches/adc/adc_common_group_name.yaml
+ - common_patches/syscfg/f4_common.yaml
+ - ../peripherals/syscfg/syscfg_f4_common.yaml
