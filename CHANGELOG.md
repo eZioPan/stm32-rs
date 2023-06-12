@@ -5,6 +5,9 @@
 * Replace `makehtml.py` with `svd2html`
 * Updated to svd2rust 0.28.0, svdtools 0.3.0, use tools binaries for CI
 * files in devices/common_patches moved to subdirectories
+* doc on `SYSCFG` peripheral for STM32F4 ([#852])
+
+[#852]: https://github.com/stm32-rs/stm32-rs/pull/852
 
 ## [v0.15.1] 2022-07-04
 
