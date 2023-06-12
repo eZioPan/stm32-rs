@@ -1,0 +1,5 @@
+# this file is for STM32 F410 F401 F411 F412 F413
+SYSCFG:
+  PMC:
+    ADC1DC2:
+      [0, 1]

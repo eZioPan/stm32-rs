@@ -1,0 +1,9 @@
+# this file is for STM32 F446 F469 F479
+SYSCFG:
+  PMC:
+    ADC1DC2:
+      [0, 1]
+    ADC2DC2:
+      [0, 1]
+    ADC3DC2:
+      [0, 1]
