@@ -401,7 +401,7 @@ SYSCFG:
       fields:
         PVDL:
           description: PVD lock
-          bitOffset: 8
+          bitOffset: 2
           bitWidth: 1
         CLL:
           description: core lockup lock

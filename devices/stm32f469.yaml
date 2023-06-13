@@ -132,6 +132,14 @@ SAI:
   _delete:
     - GCR
 
+SYSCFG:
+  MEMRMP:
+    _delete:
+      - FB_MODE
+  PMC:
+    _delete:
+      - MII_RMII_SEL
+
 _include:
  - common_patches/nvic/4_prio_bits.yaml
  - common_patches/i2c/merge_OAR1_ADDx_fields.yaml

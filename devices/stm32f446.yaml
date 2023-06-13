@@ -116,6 +116,12 @@ SYSCFG:
           description: Forces FM+ drive capability on I2CFMP1_SCL pin
           bitOffset: 1
           bitWidth: 1
+  MEMRMP:
+    _delete:
+      - FB_MODE
+  PMC:
+    _delete:
+      - MII_RMII_SEL
 
 # Add missing FMPI2C1 peripheral
 _add:
