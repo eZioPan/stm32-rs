@@ -1,6 +1,0 @@
-# this file is for STM32 F405, F415, F407, F417, F427, F437, F429, F439
-SYSCFG:
-  PMC:
-    MII_RMII_SEL:
-      MII: [0, "MII interface is selected"]
-      RMII_PHY: [1, "RMII PHY interface is selected"]

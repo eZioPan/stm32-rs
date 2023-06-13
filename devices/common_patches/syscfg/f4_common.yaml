@@ -1,4 +1,7 @@
 SYSCFG:
+  _modify:
+    MEMRM:
+      name: MEMRMP
   CMPCR:
     _modify:
       READY:
