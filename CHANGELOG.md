@@ -6,8 +6,10 @@
 * Updated to svd2rust 0.28.0, svdtools 0.3.0, use tools binaries for CI
 * files in devices/common_patches moved to subdirectories
 * remove excutable file perm bit from yaml file ([#854])
+* doc on `OTG_FS_*` for STM32F4 with standalone `OTG_FS_*` section (#[855])
 
 [#854]: https://github.com/stm32-rs/stm32-rs/pull/854
+[#855]: https://github.com/stm32-rs/stm32-rs/pull/855
 
 ## [v0.15.1] 2022-07-04
 
