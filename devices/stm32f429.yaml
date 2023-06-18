@@ -128,6 +128,20 @@ MPU:
   _strip:
     - "MPU_"
 
+"PWR":
+  CR:
+    _add:
+      ADCDC1:
+        bitOffset: 13
+        bitWidth: 1
+      MRUDS:
+        bitOffset: 11
+        bitWidth: 1
+      LPUDS:
+        description: Low-power regulator in deepsleep under-drive mode
+        bitOffset: 10
+        bitWidth: 1
+
 _include:
  - common_patches/nvic/4_prio_bits.yaml
  - common_patches/i2c/merge_OAR1_ADDx_fields.yaml
