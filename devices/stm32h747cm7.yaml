@@ -108,3 +108,4 @@ _include:
  - common_patches/wwdg/h7.yaml
  - common_patches/ethernet/h7_mac.yaml
  - common_patches/syscfg/h74x_pwrcr.yaml
+ - ../peripherals/quadspi/quadspi_v1.yaml

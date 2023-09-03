@@ -296,6 +296,14 @@ SAI1:
   _delete:
     - GCR
 
+QUADSPI:
+  CCR:
+    _add:
+      DHHC:
+        description: DDR hold
+        bitOffset: 30
+        bitWidth: 1
+
 _include:
  - common_patches/rtc/alarm.yaml
  - common_patches/rtc/rtc_bkpr.yaml
@@ -307,3 +315,4 @@ _include:
  - ./common_patches/adc/l4_smpr.yaml
  - common_patches/hsem/array.yaml
  - common_patches/tim/tim2_32bit.yaml
+ - ../peripherals/quadspi/quadspi_v1.yaml

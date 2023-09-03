@@ -144,3 +144,4 @@ _include:
  - ./common_patches/dac/dac_rename_stm32l4xx.yaml
  - ../peripherals/dac/dac_l4xx.yaml
  - ../peripherals/opamp/opamp_l4.yaml
+ - ../peripherals/quadspi/quadspi_v1.yaml
