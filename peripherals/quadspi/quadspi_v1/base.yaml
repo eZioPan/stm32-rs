@@ -36,12 +36,6 @@
       Disabled: [0, ""]
       Enabled: [1, ""]
     FTHRES: [0, 31]
-    FSEL:
-      SelectFlash1: [0, "FLASH 1 selected"]
-      SelectFlash2: [1, "FLASH 2 selected"]
-    DFM:
-      Disabled: [0, "Dual-flash mode disabled"]
-      Enabled: [1, "Dual-flash mode enabled"]
     SSHIFT:
       NoShift: [0, "No shift"]
       OneHalfCycleShift: [1, "1/2 cycle shift"]

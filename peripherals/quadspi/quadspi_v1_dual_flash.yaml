@@ -1,0 +1,3 @@
+_include:
+  - ./quadspi_v1/base.yaml
+  - ./quadspi_v1/dual_flash.yaml
