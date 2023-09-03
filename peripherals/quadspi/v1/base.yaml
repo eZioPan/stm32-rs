@@ -113,10 +113,6 @@
     DDRM:
       Disabled: [0, "DDR Mode disabled"]
       Enabled: [1, "DDR Mode enabled"]
-    DHHC:
-      NoDelay: [0, "Delay the data output using analog delay"]
-      Delayed:
-        [1, "Delay the data output by 1/4 of a QUADSPI output clock cycle."]
     SIOO:
       SendEveryTransaction: [0, "Send instruction on every transaction"]
       SendFirstCommand: [1, "Send instruction only for the first command"]

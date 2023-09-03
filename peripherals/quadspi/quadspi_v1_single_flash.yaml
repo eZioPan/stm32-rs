@@ -1,2 +1,2 @@
 _include:
-  - ./quadspi_v1/base.yaml
+  - ./v1/base.yaml
