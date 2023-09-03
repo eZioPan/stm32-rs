@@ -161,7 +161,9 @@
     ALTERNATE: [0, 0xFFFF_FFFF]
 
   DR:
-    DATA: [0, 0xFFFF_FFFF]
+    DataOneByte: [0, 0xFF]
+    DataHalfWord: [0, 0xFFFF]
+    DataFullWord: [0, 0xFFFF_FFFF]
 
   PSMKR:
     MASK: [0, 0xFFFF_FFFF]

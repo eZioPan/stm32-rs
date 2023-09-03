@@ -1,0 +1,17 @@
+"QUADSPI":
+  DR:
+    _delete:
+      - DATA
+    _add:
+      DataOneByte:
+        description: One byte access to DATA field
+        bitOffset: 0
+        bitWidth: 8
+      DataHalfWord:
+        description: Half word (16 bytes) access to DATA field
+        bitOffset: 0
+        bitWidth: 16
+      DataFullWord:
+        description: Full word (32 bytes) access to DATA field
+        bitOffset: 0
+        bitWidth: 32
