@@ -29,7 +29,21 @@ FLASH:
         bitWidth: 4
 TIM3:
   _delete:
-    - DMA2_Stream7
+    _interrupts:
+      - DMA2_Stream7
+TIM1:
+  _delete:
+    _interrupts:
+      - TIM1_UP_TIM10
+      - TIM1_TRG_COM_TIM11
+  _add:
+    _interrupts:
+      TIM1_UP_TIM10:
+        value: 25
+        description: TIM1 Update interrupt and TIM10 global interrupt
+      TIM1_TRG_COM_TIM11:
+        value: 26
+        description: TIM1 Trigger and Commutation interrupts and TIM11 global interrupt
 
 # Add missing reset bit for SPI 4 (enable bits are present)
 RCC:

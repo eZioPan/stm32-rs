@@ -264,6 +264,13 @@ UART10:
     _interrupts:
       - USART10
 
+QUADSPI:
+  _add:
+    _interrupts:
+      QuadSPI:
+        value: 92
+        description: Quad-SPI global interrupt
+
 # NOTE: Core peripherals (NVIC, MPU, FPU, SCB, etc.) were deleted
 
 _include:

@@ -123,6 +123,8 @@ FMPI2C1:
   _modify:
     ISR:
       access: ""
+    TXDR:
+      access: read-write
   CR2:
     _delete:
       - "SADD*"
