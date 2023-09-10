@@ -59,18 +59,6 @@ CRC:
       CR:
         name: RESET
 
-"OTG_HS_HOST,unknown":
-  OTG_HS_HCINT0:
-    _add:
-      AHBERR:
-        description: AHB error
-        bitOffset: 2
-        bitWidth: 1
-      NYET:
-        description: Response received interrupt
-        bitOffset: 6
-        bitWidth: 1
-
 # NOTE: Core peripherals (NVIC, MPU, FPU, SCB, etc.) were deleted
 
 _include:
@@ -142,7 +130,7 @@ _include:
  - common_patches/usb_otg/fs_remove_prefix.yaml
  - common_patches/usb_otg/fs_v1ext.yaml
  - common_patches/usb_otg/fs_v1.yaml
- - common_patches/usb_otg/hs_v1.yaml
+ - common_patches/usb_otg/hs_v1_f4.yaml
  - common_patches/dbgmcu/dbgmcu.yaml
  - ../peripherals/sai/sai.yaml
  - ../peripherals/rng/rng_v1.yaml
