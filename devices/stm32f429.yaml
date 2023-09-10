@@ -124,12 +124,21 @@ RCC:
         bitOffset: 21
         bitWidth: 1
 
-MPU:
-  _strip:
-    - "MPU_"
+"OTG_HS_HOST,unknown":
+  OTG_HS_HCINT0:
+    _add:
+      AHBERR:
+        description: AHB error
+        bitOffset: 2
+        bitWidth: 1
+      NYET:
+        description: Response received interrupt
+        bitOffset: 6
+        bitWidth: 1
+
+# NOTE: Core peripherals (NVIC, MPU, FPU, SCB, etc.) were deleted
 
 _include:
- - common_patches/nvic/4_prio_bits.yaml
  - common_patches/i2c/merge_OAR1_ADDx_fields.yaml
  - common_patches/dma/fcr_wo.yaml
  - common_patches/ethernet/mac_regs.yaml
@@ -171,7 +180,6 @@ _include:
  - common_patches/dma/dma_v2.yaml
  - ../peripherals/dma/dma_v2.yaml
  - ../peripherals/spi/spi_v1.yaml
- - common_patches/tim/tim_o24ce.yaml
  - common_patches/tim/tim10_14_missing_opm.yaml
  - common_patches/tim/common.yaml
  - ../peripherals/tim/tim_basic.yaml
@@ -205,7 +213,6 @@ _include:
  - common_patches/usb_otg/fs_v1.yaml
  - common_patches/usb_otg/hs_v1.yaml
  - common_patches/dbgmcu/dbgmcu.yaml
- - common_patches/fpu_interrupt.yaml
  - common_patches/fsmc/fsmc_sram.yaml
  - common_patches/fsmc/fsmc_sramfix_v3.yaml
  - common_patches/fsmc/fsmc_nand_v1.yaml
