@@ -43,6 +43,13 @@ OTG_HS_GLOBAL:
     DIEPTXF[12345]: {}
 
 OTG_HS_HOST:
+  _delete:
+    - "HCCHAR1[2-5]"
+    - "HCSPLT1[2-5]"
+    - "HCINT1[2-5]"
+    - "HCINTMSK1[2-5]"
+    - "HCTSIZ1[2-5]"
+    - "HCDMA1[2-5]"
   HCINT0:
     _add:
       AHBERR:

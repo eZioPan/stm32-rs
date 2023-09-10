@@ -28,6 +28,11 @@ FLASH:
 _delete:
   - TIM8
 
+GPIOC:
+  _delete:
+    _interrupts:
+      - TIM1_UP_TIM10
+
 # NOTE: Core peripherals (NVIC, MPU, FPU, SCB, etc.) were deleted
 
 _include:
