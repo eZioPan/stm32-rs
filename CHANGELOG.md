@@ -8,7 +8,7 @@
 * files in devices/common_patches moved to subdirectories
 * remove excutable file perm bit from yaml file ([#854])
 * Doc `QUADSPI` peripheral ([#875])
-    * `DATA` field of `DR` register can be access by 1 byte, half word and full word. Use `.data_one_byte()`, `.data_half_word()`, `.data_full_word()` to access this field.
+    * `DR` register can be access by 1 byte, half word and full word. Use `.dr8()`, `.dr16()`, `.dr()` to access this register.
 
 [#854]: https://github.com/stm32-rs/stm32-rs/pull/854
 [#875]: https://github.com/stm32-rs/stm32-rs/pull/875
