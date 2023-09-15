@@ -21,13 +21,7 @@ OTG_FS_GLOBAL:
     _modify:
       PRTIM:
         access: read-write
-  GRXSTSR_Host:
-    _add:
-      STSPHST:
-        description: Status phase start
-        bitOffset: 27
-        bitWidth: 1
-  GRXSTSP_Host:
+  "GRXSTSR_Host,GRXSTSP_Host":
     _add:
       STSPHST:
         description: Status phase start
@@ -55,22 +49,6 @@ OTG_FS_DEVICE:
     DOEPCTL5:
       addressOffset: 0x3A0
 
-  DIEPCTL*:
-    _modify:
-      EPENA:
-        access: read-write
-      Stall:
-        name: STALL
-        description: STALL handshake
-
-  DOEPCTL*:
-    _modify:
-      EPENA:
-        access: read-write
-      Stall:
-        name: STALL
-        description: STALL handshake
-
   DAINTMSK:
     _modify:
       OEPINT:
@@ -78,4 +56,5 @@ OTG_FS_DEVICE:
         description: OUT EP interrupt mask bits
 
   _include:
+    - epena_stall.yaml
     - fs_device_cluster.yaml

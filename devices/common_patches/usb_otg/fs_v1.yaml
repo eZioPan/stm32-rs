@@ -102,22 +102,6 @@ OTG_FS_HOST:
     - fs_host_array.yaml
 
 OTG_FS_DEVICE:
-  DIEPCTL*:
-    _modify:
-      EPENA:
-        access: read-write
-      Stall:
-        name: STALL
-        description: STALL handshake
-
-  DOEPCTL*:
-    _modify:
-      EPENA:
-        access: read-write
-      Stall:
-        name: STALL
-        description: STALL handshake
-
   DAINTMSK:
     _modify:
       OEPINT:
@@ -125,5 +109,6 @@ OTG_FS_DEVICE:
         description: OUT EP interrupt mask bits
 
   _include:
+    - epena_stall.yaml
     - fs_device_cluster.yaml
 

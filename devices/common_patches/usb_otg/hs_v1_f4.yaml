@@ -1,4 +1,4 @@
-# For F215, F217
+# For F405, F407, F427, F429
 
 # Fix power and clock gating control register name
 
@@ -43,6 +43,23 @@ OTG_HS_GLOBAL:
     DIEPTXF[12345]: {}
 
 OTG_HS_HOST:
+  _delete:
+    - "HCCHAR1[2-5]"
+    - "HCSPLT1[2-5]"
+    - "HCINT1[2-5]"
+    - "HCINTMSK1[2-5]"
+    - "HCTSIZ1[2-5]"
+    - "HCDMA1[2-5]"
+  HCINT0:
+    _add:
+      AHBERR:
+        description: AHB error
+        bitOffset: 2
+        bitWidth: 1
+      NYET:
+        description: Response received interrupt
+        bitOffset: 6
+        bitWidth: 1
   _include:
     - hs_host_array.yaml
 
